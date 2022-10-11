@@ -1,0 +1,236 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Header */
+.header{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(33, 59, 126, 1);
+}
+
+.site-logo {
+    width: auto;
+}
+
+.site-menu {
+    align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-menu > li {
+    display: flex;
+    min-height: 80px;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+   font-family: 'Roboto', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+   padding: 0 18px;
+   background-color: rgb(33, 59, 126);
+}
+
+.menu-link:hover {
+    color: rgb(33, 59, 126);
+    background-color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(234, 93, 33);
+    text-decoration: none;
+}
+
+/* Login popup */
+.login-popup {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    min-height: 418px;
+    padding: 26px 28px 56px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(33, 59, 126);
+    box-shadow: 5px 5px 4px 0 rgba(0,0,0,0.25);
+}
+.login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.login-form > input {
+    width: 100%;
+    max-width: 444px;
+    min-height: 55px;
+    margin-bottom: 56px;
+    border: 1px solid #808080;
+}
+.popup-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgb(234 97 19);
+    border: none;
+}
+.login-form > input {
+    padding: 0 1em;
+}
+
+/* Main */
+.main {
+    width: 100%;
+    max-width: 911px;
+    margin: 0 auto;
+    padding: 0 2vw;
+    flex-grow: 1;
+}
+
+.class-photo {
+    object-fit: cover;
+    width: 100%;
+    max-width: 523px;
+    height: 316px;
+}
+
+.main-heading {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.17;
+}
+
+h2 {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+}
+
+.intro-text {
+width: 100%;
+max-width: 634px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+
+.intro-text > strong {
+    font-weight: 700;
+}
+
+.intro-text > em {
+color: rgb(207, 85, 16);
+font-style: italic;
+}
+/* Students */
+.students {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.student > img {
+height: auto;
+}
+
+.student-name {
+    display: block;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 59, 126, 1);
+}
+
+.copywrite {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.inoop-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 630px) {
+    .header {
+        justify-content: center;
+        padding: 1em 16px;
+        gap: 1em;
+    }
+    .site-logo {
+        width: 100%;
+        min-height: 80px;
+        }
+    .site-menu {
+        justify-content: center;
+    }
+    }
+
+/* JS */
+.active-link {
+    color: rgb(33, 59, 126);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    }
+
+    .show-popup {
+        display: block;
+    }
+
+
