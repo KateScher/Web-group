@@ -9,9 +9,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <script defer src="../js/login-popup.js"></script>
     </head>
     <body class="page">
-        <header class="header">
+        <header class="header student-header">
             <a href="https://innopolis.com"><img class="site-logo" src="../img/logo.svg" alt="Логотип"></a>
             <ul class="site-menu">
                 <li><a class="menu-link" href="../index.html">Главная</a></li>
@@ -20,31 +21,80 @@
                 <li><a class="menu-link" href="contacts.html">Контакты</a></li>
             </ul>
             <a class="login-button" href="login.html">Войти</a>
+            <div class="login-popup">
+                <h2 class="login-heading">Войти на сайт</h2>
+                <form class="login-form" action="#" method="GET">
+                    <input class="login-input" name="login" type="text" placeholder="Логин" required="">
+                    <input class="password-input" name="password" type="password" placeholder="Пароль" required="">
+                    <button class="popup-button" type="submit">Войти</button>
+                </form>    
+            </div>
         </header>
-        <main class="main">
-            <h1 class="main-heading">Студенты потока 08.02.2020 👧👦</h1>
+        <main class="main main-students">
+            <h1 class="main-heading student-heading">Студенты потока 08.02.2020</h1>
             <div class="students">
-                <section class="student">
-                    <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
+            <section class="student">
+                <a class="student-link" href="">
+                <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
                     <p class="student-name">Василий Иванов</p>
-                </section>
-                <section class="student">
-                    <img src="../img/avatar-woman.svg" alt="Аватар студента" width="200" height="270">
-                    <p class="student-name"><a href="../index8.html">Екатерина Scher</p></a>
-                </section>
-                <section class="student">
-                    <img src="../img/avatar-woman.svg" alt="Аватар студента" width="200" height="270">
-                    <p class="student-name">Мария Александрова</p>
-                    <!-- <p>НОВИЧОК</p> -->
-                </section>
-                <section class="student">
-                    <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
-                    <p class="student-name">Василий Иванов</p>
-                </section>
-                <section class="student">
-                    <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
-                    <p class="student-name">Василий Иванов</p>
-                </section>
+                </a>
+            </section>
+            <section class="student">
+                <a class="student-link" href="../index8.html">
+                <img src="../img/avatar-woman.svg" alt="Аватар студента" width="200" height="270">
+                <p class="student-name">Екатерина Scher</p>
+                </a>
+                <span class="student-new">Новичок</span>
+            </section>
+            <section class="student">
+                <a class="student-link" href="">
+                <img src="../img/avatar-woman.svg" alt="Аватар студента" width="200" height="270">
+                <p class="student-name">Мария Александрова</p>
+                </a>
+            </section>
+            <section class="student">
+                <a class="student-link" href="">
+                <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
+                <p class="student-name">Иван Петров</p>
+                </a>
+            </section>
+            <section class="student">
+                <a class="student-link" href="">
+                <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
+                <p class="student-name">Василий Петров</p>
+                </a>
+            </section>
+            <section class="student">
+                <a class="student-link" href="">
+                <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
+                    <p class="student-name">Петр Васильев</p>
+                </a>
+            </section>
+            <section class="student">
+                <a class="student-link" href="../index8.html">
+                <img src="../img/avatar-woman.svg" alt="Аватар студента" width="200" height="270">
+                <p class="student-name">Светлана Иванова</p>
+                </a>
+                <!-- <span class="student-new">Новичок</span> -->
+            </section>
+            <section class="student">
+                <a class="student-link" href="">
+                <img src="../img/avatar-woman.svg" alt="Аватар студента" width="200" height="270">
+                <p class="student-name">Ирина Мороз</p>
+                </a>
+            </section>
+            <section class="student">
+                <a class="student-link" href="">
+                <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
+                <p class="student-name">Павел Солнцев</p>
+                </a>
+            </section>
+            <section class="student">
+                <a class="student-link" href="">
+                <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
+                <p class="student-name">Сергей Васечкин</p>
+                </a>
+            </section>
             </div>
         </main>
         <footer class="footer">
